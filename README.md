@@ -1,2 +1,2 @@
-# ma4ypic4y.githob.io
+# ma4ypic4y.github.io
 first hosting
