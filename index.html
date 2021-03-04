@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-
-    <link rel="stylesheet" href="style.css">
-    <title>Expanding images</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Генератор паролей</title>
 </head>
 
-<body style="background-color: lightslategrey;">
-
+<body>
     <div class="container">
-
-        <div class="panel active" style="background-image: url(images/cactus.jpg);">
-            <h3>Cactus field</h3>
+        <h2>Генератор паролей</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Длина пароля</label>
+                <input type="number" id="length" min="4" max="20" value="20">
+            </div>
+            <div class="setting">
+                <label>Верхний регистр</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label>Нижний регистр</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label>Число</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="setting">
+                <label>Спец. знаки</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
         </div>
 
-        <div class="panel" style="background-image: url(images/road.jpg);">
-            <h3>Desert road</h3>
-        </div>
-
-        <div class="panel" style="background-image: url(images/mountains_dark.jpg);">
-            <h3>Night mountains</h3>
-        </div>
-
-        <div class="panel" style="background-image: url(images/mountains_green.jpg);">
-            <h3>Green mountains</h3>
-        </div>
-
-        <div class="panel" style="background-image: url(images/neon.jpg);">
-            <h3>Neon desert</h3>
-        </div>
+        <button class="btn btn-large" id="generate">
+            Сгенерировать пароль
+        </button>
     </div>
-
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
