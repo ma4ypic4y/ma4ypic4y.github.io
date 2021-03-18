@@ -1,78 +1,48 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #3b3b98;
-    color: #fff;
+body {
+    background-color: #1d1d23;
     font-family: 'Muli', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    padding: 10px;
-    margin: 0;
-  }
-  
-  h2 {
-    margin: 10px 0 20px;
+
     text-align: center;
-  }
-  
-  .container {
-    background-color: #23235b;
-    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    width: 350px;
-    max-width: 100%;
-  }
-  
-  .result-container {
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 12px 10px;
+    margin-top: 15%;
+    
+}
+
+h1{
+    font-size: 50px;
+    color: #5cd1db;
+}
+
+.btn {
+    width: 220px;
     height: 50px;
-    width: 100%;
-  }
-  
-  .result-container #result {
-    word-wrap: break-word;
-    max-width: calc(100% - 40px);
-  }
-  
-  .result-container .btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-  
-  .btn {
-    border: none;
-    background-color: #3b3b98;
-    color: #fff;
+   
     font-size: 16px;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
-  
-  .btn-large {
-    display: block;
-    width: 100%;
-  }
-  
-  .setting {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 0;
-  }
+
+   
+    color: #1d1d23;
+    
+    margin: 5px 5px;
+    border-radius: 10px;
+    
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #638ef3 0%, #a397ff 51%, #5cd1db 100%);
+    background-size: 300% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+
+    border: 0;
+    
+}
+
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover{
+    background-position: right center;
+}
