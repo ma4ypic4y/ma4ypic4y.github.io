@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Шифрование методом дробления</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      
+      <h1>Шифрование методом дробления</h1>
+      
+      
+      <label class="lab" for="My_Text">Исходный текст:</label>
+      <textarea rows="8" cols="80" id="My_Text">Вслед за чемоданом внесен был небольшой ларчик красного дерева с штучными выкладками из карельской березы, сапожные колодки и завернутая в синюю бумагу жареная курица. Когда все это было внесено, кучер Селифан отправился на конюшню возиться около лошадей, а лакей Петрушка стал устраиваться в маленькой передней, очень темной конурке.</textarea>
+      
+      <label class="lab" for="My_Text">Ключевая фраза для кодирования:</label>
+      <textarea rows="8" cols="80" id="My_Key">Он уважать себя заставил И лучше выдумать не мог.</textarea> <br>
+      <button class="btn" type="button" name="button" onclick="MonoTime()">Закодировать</button>
+      <p>Строки</p>
+      <input id="Res_1"></input>
+      <p>Столбцы</p>
+      <input id="Res_2"></input>
+      
+      <label class="lab" for="My_Text">Результат кодирования:</label>
+      <textarea rows="8" cols="80" id="My_res" placeholder="Здесь будет показан реузльтат кодирования, разбиением на 5 символов"></textarea> <br>
+      <button class="btn" type="button" name="button" onclick="NotMonoTime()">Декодировать</button>
+      
+      <label class="lab" for="My_Text">Результат декодирования:</label>
+    <textarea rows="8" cols="80" id="My_res_de" placeholder="Здесь будет показан реузльтат декодирования"></textarea>
+    
+  </body>
+</html>
